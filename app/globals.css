@@ -50,6 +50,10 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background:
+    radial-gradient(70% 120% at 50% -10%, rgba(31, 56, 255, 0.35) 0%, rgba(31, 56, 255, 0) 62%),
+    radial-gradient(68% 58% at 50% 62%, rgba(31, 56, 255, 0.55) 0%, rgba(31, 56, 255, 0) 72%),
+    linear-gradient(180deg, #020a4b 0%, #031057 42%, #0a25e8 62%, #050a54 82%, #01030b 100%);
 }
 
 main {
@@ -438,6 +442,8 @@ main {
 .showcase {
   position: relative;
   padding: 0 0 140px;
+  overflow: visible;
+  background: transparent;
 }
 
 .showcase-inner {
@@ -452,7 +458,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 68%, rgba(24, 45, 255, 0.24), rgba(5, 5, 18, 0) 55%);
+  background: radial-gradient(60% 55% at 50% 26%, rgba(38, 67, 255, 0.22), rgba(4, 6, 20, 0) 72%);
   pointer-events: none;
   z-index: 0;
 }
@@ -460,13 +466,12 @@ main {
 .showcase::after {
   content: "";
   position: absolute;
-  inset: 58% 0 0 0;
+  inset: 68% 0 0 0;
   background: linear-gradient(
     180deg,
-    rgba(5, 6, 12, 0) 0%,
-    rgba(0, 5, 187, 0.4) 52%,
-    rgba(0, 5, 187, 0.7) 82%,
-    rgba(5, 7, 20, 0.95) 100%
+    rgba(2, 4, 15, 0) 0%,
+    rgba(1, 2, 10, 0.82) 48%,
+    #010207 100%
   );
   pointer-events: none;
   z-index: 0;
