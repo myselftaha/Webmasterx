@@ -142,6 +142,47 @@ export default function ShowcaseSection() {
             &rdquo;
           </blockquote>
           <div className="press-source">Entrepreneur Magazine</div>
+          <div className="press-didyouknow">
+          <p className="didyouknow-kicker">DID YOU KNOW?</p>
+          <h2 className="didyouknow-title">
+            <span className="didyouknow-em">2 out of 3</span> small business owners
+            don&apos;t have a website or don&apos;t like the one they do have.
+          </h2>
+          <div className="didyouknow-why" aria-hidden="true">
+            <img
+              src="/images%201/65c388735d187a04baf6553a_why-script.svg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div className="didyouknow-cards">
+            <img
+              className="didyouknow-card"
+              src="/images%201/65df73f5d59ccfc4e532a7bd_Quote-1.webp"
+              alt="Testimonial from Joana B."
+              loading="lazy"
+            />
+            <img
+              className="didyouknow-card"
+              src="/images%201/65df73f5e51ac2b72aecb558_Quote-2.webp"
+              alt="Testimonial from Fred Z."
+              loading="lazy"
+            />
+            <img
+              className="didyouknow-card"
+              src="/images%201/65df73f57cb49d72457d7c0e_Quote-3.webp"
+              alt="Testimonial from Troy M."
+              loading="lazy"
+            />
+          </div>
+          <img
+            className="didyouknow-arrow"
+            src="/images%201/65b95f22abefc846c3b38bf1_white-bottom-arrow.svg"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          </div>
         </div>
       </div>
     </section>

@@ -169,7 +169,15 @@ main {
 }
 
 .hero::before {
-  content: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(8, 8, 8, 0) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-eyebrow {
@@ -306,7 +314,14 @@ main {
   position: relative;
   z-index: 1;
   padding: 140px 0 120px;
-  background: transparent;
+  background: linear-gradient(
+    180deg,
+    rgba(4, 6, 30, 0) 0%,
+    rgba(4, 6, 30, 0.35) 32%,
+    rgba(4, 6, 30, 0.7) 52%,
+    #040404 68%,
+    #040404 100%
+  );
 }
 
 .press-inner {
@@ -371,6 +386,86 @@ main {
   font-family: "Times New Roman", serif;
   font-size: 1.1rem;
   color: rgb(255, 255, 255);
+}
+
+.press-didyouknow {
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.didyouknow-kicker {
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 24px;
+}
+
+.didyouknow-title {
+  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
+  line-height: 1.2;
+  margin: 0 auto 28px;
+  max-width: 980px;
+  font-weight: 500;
+}
+
+.didyouknow-em {
+  color: #2d6bff;
+  font-weight: 700;
+}
+
+.didyouknow-why {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 40px;
+}
+
+.didyouknow-why img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.didyouknow-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.didyouknow-card {
+  width: min(320px, 90%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+}
+
+.didyouknow-card:nth-child(1) {
+  justify-self: start;
+  transform: translateY(-8px);
+}
+
+.didyouknow-card:nth-child(2) {
+  transform: translateY(10px);
+}
+
+.didyouknow-card:nth-child(3) {
+  justify-self: end;
+  transform: translateY(-4px);
+}
+
+.didyouknow-arrow {
+  position: absolute;
+  left: 4%;
+  bottom: -48px;
+  width: 140px;
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .hero-rating {
@@ -629,6 +724,22 @@ main {
     min-height: 0;
     gap: 18px 24px;
   }
+
+  .didyouknow-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .didyouknow-card:nth-child(1),
+  .didyouknow-card:nth-child(2),
+  .didyouknow-card:nth-child(3) {
+    justify-self: center;
+    transform: none;
+  }
+
+  .didyouknow-arrow {
+    left: 8%;
+    width: 120px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -674,5 +785,19 @@ main {
 
   .press-logos {
     gap: 14px 18px;
+  }
+
+  .didyouknow-title {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  .didyouknow-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .didyouknow-arrow {
+    position: static;
+    margin: 28px auto 0;
+    display: block;
   }
 }
