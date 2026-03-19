@@ -317,9 +317,9 @@ main {
   background: linear-gradient(
     180deg,
     rgba(4, 6, 30, 0) 0%,
-    rgba(4, 6, 30, 0.35) 32%,
-    rgba(4, 6, 30, 0.7) 52%,
-    #040404 68%,
+    rgba(4, 6, 30, 0.45) 22%,
+    rgba(4, 6, 30, 0.85) 40%,
+    #040404 56%,
     #040404 100%
   );
 }
@@ -430,7 +430,7 @@ main {
 .didyouknow-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
+  gap: 40px;
   align-items: center;
   justify-items: center;
   position: relative;
@@ -438,7 +438,7 @@ main {
 }
 
 .didyouknow-card {
-  width: min(320px, 90%);
+  width: min(600px, 100%);
   height: auto;
   display: block;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
@@ -450,19 +450,19 @@ main {
 }
 
 .didyouknow-card:nth-child(2) {
-  transform: translateY(10px);
+  transform: translateY(110px);
 }
 
 .didyouknow-card:nth-child(3) {
   justify-self: end;
-  transform: translateY(-4px);
+  transform: translateY(20px);
 }
 
 .didyouknow-arrow {
   position: absolute;
-  left: 4%;
-  bottom: -48px;
-  width: 140px;
+  left: 18%;
+  bottom: -200px;
+  width: 160px;
   height: auto;
   opacity: 0.9;
   pointer-events: none;
