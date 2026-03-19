@@ -110,10 +110,13 @@ export default function ShowcaseSection() {
             aria-hidden="true"
             loading="lazy"
           />
-          <div className="showcase-badge" aria-hidden="true">
-            <span>MONEY BACK</span>
-            <span>GUARANTEE</span>
-            <div className="badge-inner">U</div>
+          <div className="showcase-badge">
+            <img
+              className="badge-image"
+              src="/65b93f200281a540d037b3f6_mb-badge-content.svg"
+              alt="Money back guarantee"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

@@ -587,50 +587,29 @@ main {
 
 .showcase-badge {
   position: absolute;
-  top: -12%;
-  right: -4%;
-  width: clamp(80px, 9vw, 130px);
-  height: clamp(80px, 9vw, 130px);
-  border-radius: 50%;
-  border: 2px solid rgba(120, 140, 255, 0.5);
-  background: radial-gradient(circle at 30% 30%, #293a8f, #0b1540);
-  color: white;
-  font-size: 0.55rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  top: -7%;
+  right: -2%;
+  width: clamp(96px, 10vw, 130px);
+  height: clamp(96px, 10vw, 130px);
+  border-radius: 999px;
   z-index: 5;
-}
-
-.showcase-badge span {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  font-weight: 600;
-}
-
-.showcase-badge span:first-child {
-  top: 14%;
-}
-
-.showcase-badge span:last-child {
-  bottom: 14%;
-}
-
-.badge-inner {
-  width: 46%;
-  height: 46%;
-  border-radius: 50%;
-  border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
+  overflow: hidden;
+  background: rgba(12, 18, 40, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2);
+  backdrop-filter: brightness(200%) blur(50px);
+  -webkit-backdrop-filter: brightness(120%) blur(20px);
+  filter: drop-shadow(0 10px 24px rgba(69, 69, 72, 0.55));
+}
+
+.badge-image {
+  width: 80%;
+  height: 80%;
+  display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 960px) {
